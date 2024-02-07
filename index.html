@@ -19,17 +19,19 @@
 <body>
     <img id="app-icon" alt="A 3D icon of a pencil and paper anottating tasks" src="assets/nani-do-icon.png">
     <section id="task-deadline">
-        <label for="deadline">When this task should be done?</label>
-        <input id="deadline" name="deadline" type="date">
+        <label for="deadline" class="title">Deadline:</label>
+        <input id="deadline" name="deadline" type="date" required>
     </section>
     <section id="importance-level">
-        <label for="importance">How important is this task?</label>
-        <p>Not important</p>
-        <input id="importance" name="deadline" type="range" min="1" max="5" step="1">
-        <p>Very important</p>
+        <label for="importance" class="title">How important is this task?</label>
+        <div id="importance-range">
+            <p>Not important</p>
+            <input id="importance" name="deadline" type="range" min="1" max="5" step="1" required>
+            <p>Very important</p>
+        </div>
     </section>
     <section id="task-name">
-        <input type="text" minlength="5" maxlength="45" placeholder="Task name...">
+        <input type="text" minlength="5" maxlength="45" placeholder="Task name..." required>
     </section>
     <button>Add task</button>
 </body>
