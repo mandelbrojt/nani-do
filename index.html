@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nani-Do</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <img id="app-icon" alt="A 3D icon of a pencil and paper anottating tasks" src="assets/nani-do-icon.png">
+    <section id="task-deadline">
+        <label for="deadline">When this task should be done?</label>
+        <input id="deadline" name="deadline" type="date">
+    </section>
+    <section id="importance-level">
+        <label for="importance">How important is this task?</label>
+        <p>Not important</p>
+        <input id="importance" name="deadline" type="range" min="1" max="5" step="1">
+        <p>Very important</p>
+    </section>
+    <section id="task-name">
+        <input type="text" minlength="5" maxlength="45" placeholder="Task name...">
+    </section>
+    <button>Add task</button>
+</body>
+</html>
