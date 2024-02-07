@@ -3,6 +3,31 @@ html * {
     border: 1px dashed black;
 }
 
+body * {
+    margin: 10px 0;
+}
+
+body {
+    text-align: center;
+    max-width: 350px;
+    margin: 30px auto;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 18px;
+}
+
 #app-icon {
     width: 150px;
+}
+
+#task-deadline {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+#importance-range {
+    display: flex;
 }
