@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nani-Do</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-    <section id="logo-section">
-        <img id="app-logo" alt="A 3D icon of a pencil and paper anottating tasks" src="assets/nani-do-icon.png">
-    </section>
-    <section id="dealine-section">
-        <label for="deadline" class="title">Deadline:</label>
-        <div id="deadline-input">
-            <input id="deadline" name="deadline" type="date" required>
-        </div>
-    </section>
-    <section id="importance-section">
-        <span class="title">Level of importance:</span>
-        <div id="importance-input">
-            <input id="low-importance" name="importance" type="radio" value="low">
-            <label for="low-importance">Low</label>
-            <input id="med-importance" name="importance" type="radio" value="medium">
-            <label for="med-importance">Medium</label>
-            <input id="high-importance" name="importance" type="radio" value="high">
-            <label for="high-importance">High</label>
-        </div>
-    </section>
-    <section id="task-name-section">
-        <label for="task-name">Name of your task:</label>
-        <div id="task-name-input">
-            <input id="task-name" name="task-name" type="text" minlength="5" maxlength="45" placeholder="Do something..." required>
-        </div>
-    </section>
-    <section id="button-section">
-        <button id="submit-button">Add Task</button>
-    </section>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nani-Do</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+
+    <body>
+        <form>
+            <section id="logo-section">
+                <img id="app-logo" alt="A 3D icon of a pencil and paper annotating tasks" src="assets/nani-do-icon.png">
+            </section>
+            
+            <section id="deadline-section">
+                <label for="deadline" class="title">Deadline:</label>
+                <br>
+                <input id="deadline" name="deadline" type="date" required>
+            </section>
+            
+            <section id="importance-section">
+                <span class="title">Level of importance:</span>
+                <div id="importance-input">
+                    <input id="low-importance" name="importance" type="radio" value="low" required>
+                    <label for="low-importance">Low</label>
+                    <input id="med-importance" name="importance" type="radio" value="medium" required>
+                    <label for="med-importance">Medium</label>
+                    <input id="high-importance" name="importance" type="radio" value="high" required>
+                    <label for="high-importance">High</label>
+                </div>
+            </section>
+            
+            <section id="task-name-section">
+                <label for="task-name" class="title">Name of your task:</label>
+                <input id="task-name" name="task-name" type="text" minlength="5" maxlength="45"
+                        placeholder="Do something..." required>
+            </section>
+            
+            <section id="button-section">
+                <input id="submit-button" type="submit" value="Add Task">
+            </section>
+        </form>
+    </body>
+
 </html>
