@@ -1,16 +1,16 @@
 html * {
     font-family: 'Lato', sans-serif;
-    border: 1px dashed black;
-}
-
-body * {
-    margin: 10px 0;
 }
 
 body {
-    text-align: center;
+    /* text-align: center; */
     max-width: 350px;
     margin: 30px auto;
+    padding: 10px 0;
+}
+
+label {
+    text-align: left;
 }
 
 .title {
@@ -18,16 +18,54 @@ body {
     font-size: 18px;
 }
 
-#app-icon {
+#logo-section {
+    text-align: center;
+}
+
+#app-logo {
     width: 150px;
 }
 
-#task-deadline {
-    display: flex;
-    justify-content: center;
-    gap: 0 20px;
+#dealine-section, #importance-section, #task-name-section {
+    margin-bottom: 10px;
 }
 
-#importance-range {
+#deadline-input {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#deadline {
+    padding: 5px 10px;
+}
+
+#importance-input {
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#low-importance, #med-importance, #high-importance {
+    transform: scale(1.2);
+}
+
+#task-name-input {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#task-name {
+    width: 200px;
+    padding: 5px 10px;
+}
+
+#button-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#submit-button {
+    width: 150px;
+    padding: 5px 10px;
 }
